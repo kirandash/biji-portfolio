@@ -9,7 +9,7 @@ function biji_theme_styles() {
 	
 }
 
-add_acton('wp_enqueue_scripts','biji_theme_styles');
+add_action('wp_enqueue_scripts','biji_theme_styles');
 
 function biji_theme_js() {
 	
@@ -18,6 +18,6 @@ function biji_theme_js() {
 	wp_enqueue_script('main_js',get_template_directory_uri() . '/js/app.js' , array('jquery', 'foundation_js') , '' ,true);
 }
 
-add_action('wp_enqueue_scripts','biji_theme_scripts');
+add_action('wp_enqueue_scripts','biji_theme_js');
 
 ?>

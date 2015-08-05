@@ -1,9 +1,9 @@
-jquery(document).ready(function(){
+jQuery(document).ready(function(){
 	
-	$(document).foundation();
-	$( ".nav-toggle" ).click(function() {
-	  $(this).toggleClass("open");
-	  $("nav").fadeToggle(100);
+	jQuery(document).foundation();
+	jQuery( ".nav-toggle" ).click(function() {
+	  jQuery(this).toggleClass("open");
+	  jQuery("nav").fadeToggle(100);
 	
 	  return false;
 	});

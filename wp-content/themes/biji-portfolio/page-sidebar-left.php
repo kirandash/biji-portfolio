@@ -18,17 +18,13 @@
               <p><?php the_content();?></p>     
               
               <?php endwhile; else : ?>
-                  <p><?php _e( 'Sorry, no pages found.' ); ?></p>
+                  <p><?php _e( 'Sorry, no pages found.' , 'bijiportfolio' ); ?></p>
               <?php endif; ?>
        		</div>
            </div><!-- Primary Column -->
         
-          <!-- Secondary Column -->
-          <div class="small-12 medium-4 medium-pull-8 columns">
-            <div class="secondary">
-            	<h2 class="module-heading">Sidebar</h2>
-            </div>
-          </div><!-- Secondary Column -->
+		<?php get_sidebar('page'); ?>
+        
          </div><!-- Row -->
        </div>
     </section>
